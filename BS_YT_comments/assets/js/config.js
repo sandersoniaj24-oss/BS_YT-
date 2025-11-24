@@ -8,7 +8,7 @@ const CONFIG = {
     },
     
     // ローカルデータを使用するか（true: data.jsを使用、false: スプレッドシートから読み込み）
-    useLocalData: false,
+    useLocalData: true,
     
     // CSVファイルのパス（スプレッドシートが使えない場合の代替）
     csvFiles: {

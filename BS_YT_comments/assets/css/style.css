@@ -1031,12 +1031,67 @@ main {
 
     .video-info-table {
         font-size: 12px;
+        display: block;
+        width: 100%;
+    }
+
+    .video-info-table tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .video-info-table tr:first-child {
+        margin-bottom: 15px;
+    }
+
+    .video-info-table td {
+        display: block;
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    .video-title-row {
+        font-size: 16px;
+        padding: 12px 10px !important;
+        white-space: normal !important;
+        text-overflow: clip !important;
+        overflow: visible !important;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .video-thumbnail-cell-large {
+        width: 100% !important;
+        padding: 10px !important;
+        text-align: center;
+        border-right: none !important;
+        border-bottom: 2px solid #E0E0E0;
+        margin-bottom: 10px;
     }
 
     .video-thumbnail-large {
         width: 100%;
         height: auto;
-        max-width: 250px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .video-info-label {
+        width: 100% !important;
+        text-align: left !important;
+        border-right: none !important;
+        border-bottom: 1px solid #E0E0E0;
+        padding-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .video-info-value {
+        width: 100% !important;
+        padding-left: 10px !important;
+        padding-top: 5px;
     }
 }
 
