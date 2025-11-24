@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOATERS YouTube コメント</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BOATERS YouTube コメント</h1>
+            <nav class="main-nav">
+                <button class="nav-btn active" data-view="videos">動画一覧</button>
+                <button class="nav-btn" data-view="comments">コメント一覧</button>
+                <button class="nav-btn" data-view="authors">投稿者統計</button>
+            </nav>
+        </header>
+        <main>
+            <!-- ローディングインジケーター -->
+            <div id="loading-indicator" class="loading-indicator" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>データを読み込んでいます...</p>
+            </div>
+            
+            <!-- 動画一覧ビュー -->
+            <section id="videos-view" class="view active">
+                <h2>チャンネル内の動画一覧</h2>
+                <div id="videos-container" class="videos-grid"></div>
+            </section>
+
+            <!-- コメント一覧ビュー -->
+            <section id="comments-view" class="view">
+                <h2>動画毎のコメント一覧</h2>
+                <div class="video-selector">
+                    <label for="video-select">動画を選択:</label>
+                    <select id="video-select">
+                        <option value="">-- 動画を選択してください --</option>
+                    </select>
+                </div>
+                <div id="comments-container"></div>
+            </section>
+
+            <!-- 投稿者統計ビュー -->
+            <section id="authors-view" class="view">
+                <h2>コメント投稿者のコメント回数一覧</h2>
+                <div id="authors-container"></div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/data-loader.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <!-- ページトップへボタン -->
+    <button id="scroll-to-top" class="scroll-to-top-btn" title="ページトップへ">
+        ↑
+    </button>
+</body>
+</html>
